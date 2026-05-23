@@ -1,7 +1,7 @@
 // BACKEND API URL
 
 const BASE_URL =
-"http://localhost:3000/api/v1/users";
+"http://fullstack-auth-app-jlz5.vercel.app/api/v1/users";
 
 // FORM TYPE
 
