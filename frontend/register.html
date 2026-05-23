@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register Page</title>
+
+  <style>
+
+    body{
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #43e97b, #38f9d7);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      margin:0;
+    }
+
+    .register-box{
+      background:white;
+      padding:30px;
+      width:380px;
+      border-radius:12px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:20px;
+    }
+
+    input{
+      width:100%;
+      padding:12px;
+      margin:10px 0;
+      border:1px solid #ccc;
+      border-radius:8px;
+      box-sizing:border-box;
+    }
+
+    button{
+      width:100%;
+      padding:12px;
+      background:#28a745;
+      border:none;
+      color:white;
+      font-size:16px;
+      border-radius:8px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#1e7e34;
+    }
+
+    p{
+      text-align:center;
+      margin-top:15px;
+    }
+
+    a{
+      text-decoration:none;
+      color:#007bff;
+      font-weight:bold;
+    }
+
+    .rules{
+      font-size:14px;
+      color:#555;
+      margin-top:10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="register-box">
+
+    <h2>Register</h2>
+
+    <form>
+
+      <!-- Full Name -->
+      <input
+        type="text"
+        placeholder="Enter Full Name"
+        required
+      >
+
+      <!-- Email -->
+      <input
+        type="email"
+        placeholder="Enter Email"
+        required
+      >
+
+      <!-- Phone Number -->
+      <input
+        type="tel"
+        placeholder="Enter 10 Digit Phone Number"
+        pattern="[0-9]{10}"
+        maxlength="10"
+        required
+      >
+
+      <!-- Password -->
+      <input
+        type="password"
+        placeholder="Create Password"
+        pattern="^(?=.*[A-Z])(?=.*[0-9]).{6,}$"
+        title="Password must contain:
+1 Capital Letter
+1 Number
+Minimum 6 Characters"
+        required
+      >
+
+      <div class="rules">
+        <b>Password Rules:</b>
+        <ul>
+          <li>Must contain at least 1 Capital Letter</li>
+          <li>Must contain at least 1 Number</li>
+          <li>Minimum 6 Characters</li>
+        </ul>
+
+        <b>Phone Number Rules:</b>
+        <ul>
+          <li>Must contain exactly 10 digits</li>
+        </ul>
+      </div>
+
+      <button type="submit">Register</button>
+
+    </form>
+
+    <p>
+      Already have an account?
+      <a href="login.html">Login</a>
+    </p>
+
+  </div>
+
+</body>
+</html>
